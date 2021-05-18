@@ -1,0 +1,75 @@
+// Bot send message to API
+//Success
+{
+    "message": "string",
+    "date": "1621085772"
+}
+  
+  //Falha
+  {
+    "code": "BSERR-001",
+    "data": {
+      "error": "banco de dados tá chorando",
+      "message": "banco de dados foi sobrecarregado por limite de tentativas"
+    },
+    "date": "1621085772"
+  }
+  
+  //API send message to Bot
+  //Success
+  {
+    "idUser": "000",
+    "data": {
+      "name": "string",
+      "message": "string",
+    },
+    "date": "1621085772"
+  }
+  //Falha de volta ao front
+  {
+    "code": "BSERR-001",
+    "data": {
+      "error": "banco de dados tá chorando",
+      "message": "banco de dados foi sobrecarregado por limite de tentativas"
+    },
+    "date": "1621085772"
+  }
+  
+  //API send message to Front
+  //Success
+  {
+    "message": "string",
+    "date": "1621085772"
+  }
+  
+  //Falha
+  {
+    "code": "BSERR-001",
+    "data": {
+      "error": "unexpected error",
+      "message": "Um error inexperado ocorreu, informe para a staff"
+    },
+    "date": "1621085772"
+  }
+  
+  //Front send messsage to API
+  {
+    "idUser": "000",
+    "data": {
+      "name": "string",
+      "message": "string",
+    },
+    "date": "1621085772"
+  }
+  
+  //Front exibindo
+  //Success
+  -------------------------------------------------------------
+  user1: olá
+  bot: coé, user1
+  -------------------------------------------------------------
+  
+  //Fail
+  -------------------------------------------------------------------
+  ERROR: "BSERR-001 - Um error inexperado ocorreu, informe para a staff"
+  ----------------------------------------------------------------
